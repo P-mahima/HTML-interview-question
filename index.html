@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Interview Question</h1>
+    <hr>
+    <h2>Day 01</h2>
+    <hr>
+
+        <h4>1.Difference between the div and span.</h4>
+         div is a block level element. And it takes whole width of the webpage
+        <br>
+             span is a inline element. And it takes the width as per the element present init. 
+    <br>
+        <h4>2.Difference between the class and id.</h4>
+         id is must be unique.
+        <br>
+             class need not be unique.
+    <br>
+
+        <h4>3.What are the self closing tag?</h4>
+        self closing tag are those tag that they do not need any closing tag.
+        <br>
+        eg. img, hr, br, input, meta   
+    <br>
+        <h4>4.How many types of headings are there?</h4>
+        there are six types of headings.
+        <br>
+    <ul type="square">
+        <li>h1 = 32px
+        <br>
+        <li>h2 = 24px</li>
+        <br>
+        <li>h3 = 18px</li>
+        <br>
+        <li>h4 = 16px</li>
+        <br>
+        <li>h5 = 13px</li>
+        <br>
+        <li>h6 = 10px</li>
+    </ul>
+    <br>
+        <h4>5.Difference between block and inline.</h4>
+        block elements takes whole width of the webpage. and they always start on the new line. 
+        <br>
+        eg. div, p, h1-h6, table, li.
+        <br>
+        inline elements take the width as per the content present inside it. it just start one another, doesn't start one another.
+        <br>
+        eg. img, a, span, input, button, iframe.
+    <br>
+        <h4>6..Difference between em and strong.</h4>
+        Both are the inline element.
+        <br>
+        em is emphasis tag which is used to make the content itallic.
+        <br>
+        strong tag is used when we have to give importance to some specific content/text.
+    <br>
+        <h4>7.What are the attributes?</h4>
+        Attributes are the property of the tag.
+        <br>
+        eg. 
+        <br>
+        img tag has the attributes named as src="" and alt="". 
+        <br>
+        a (anchor) tag has the attributes named as href="" and target="".
+    <br>
+    <br>
+    <hr>
+    <h2>Day 02</h2>
+    <hr>
+        <h4>1.Difference between HTML tags and elements.</h4>
+        HTML tags are enclosed between < and > symbols.
+        <br>
+        HTML element has its own set of html tags.
+        <br>
+        HTML elements has been created by using HTML tags.
+    <br>
+        <h4>2.Explain br tag.</h4>
+        br tag is,
+        <br>
+    <ol type="a">
+        <li> br tag is line brake.</li>
+        <br>
+        <li>self-closing tag.</li>
+        <br>
+        <li>It is block element.</li>
+        <br>
+        <li>It gives the space between two or more corresponding paragraph/headings/text/image, etc.</li>
+    </ol>
+    <br>
+        <h4>3.Explain how many different types of list we have in html.</h4>
+        In html there are 3 types of list.
+        <br>
+    <ul type="disc">
+        <li><h4>1.Ordered list.</h4>
+        types= 1/I/i/A/a</li>
+        <li><h4>2.Unordered list</h4>
+        types= disc/circle/square/none.</li>
+        <li><h4>3.Description list</h4>
+        Description list includes dt (description title) and dd (description data)</li>
+    </ul>
+    <br>
+
+        <h4>4.What are the semantic tag?</h4>
+        Tags that are specific about their functionality.
+        <br>
+        eg., img, button, h1, a
+    
+    <br>
+        <h4>5.Write a code to create an Ordered list with roman numbers.</h4>
+        create a Ordered list (ol), insert list items init. and in ol tag give property type="I". I is the value of the property.
+        <br>
+        I is used for capital roman numbers and i is used for the small roman numbers.
+        <br>
+        <ol type="I">
+            <li>mahima</li>
+            <li>falguni</li>
+            <li>riya</li>
+            <li>tina</li>
+            <li>khushi</li>
+        </ol>
+        <ol type="i">
+        
+            <li>mahima</li>
+            <li>falguni</li>
+            <li>riya</li>
+            <li>tina</li>
+            <li>khushi</li>
+        </ol>
+    <br>
+        <h4>6.Write a code to crete an Unordered list with circle.</h4>
+        <ul type="circle">
+            <li>mahima</li>
+            <li>falguni</li>
+            <li>riya</li>
+            <li>tina</li>
+            <li>khushi</li>
+        </ul>    
+    <br>
+        <h4>7.Write a code to create a link to https://www.prepbytes.com</h4>
+        Use the a (anchor) tag and anchor tag have attribute named as href and target.
+        <br>
+        put your page link inside the href attribute.
+        <br>
+        If you want to open the link in same tab then used _blank value in target attribute.  
+        <br>
+        Or
+        <br>
+        If you want to open the link in other tab then used _self value in target attribute.
+        <br>  
+        <a href="https://www.prepbytes.com" target="_blank">prepbytes page</a>
+    <br>
+    <br>
+    <hr>
+    <h2>Day 03</h2>
+    <hr>
+        <h4>1.Write a code to insert an image.</h4>
+        To insert an image use img tag inside it, it have attributes named src and alt.
+        <br>
+        Inside of src attribute just put your image link or copy the image in same folder in which you are working, and just use ./
+        <br>
+        Inside of alt attribute write any alternate text.
+        <img src="./image.png" alt="image">
+    <br>
+        <h4>2.Create a form contain input fields like name, age, email and contact.</h4>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="name"  required>
+            <br>
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="age"  required>
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email"  required>
+            <br>
+            <br>
+            <label for="contact">Contact</label>
+            <input type="tel" id="contact" placeholder="contact"  required>
+        </form>
+    <br>
+        <h4>3.Create a table and explain how to achieve colspan.</h4>
+        The colspan attribute defines the number of coloums a table cell should span.
+        <br>
+        <table border="1px" width="50%">
+            <tbody>
+                <tr>
+                    <th colspan="2">Name</th>
+                    <th>Colour</th>
+                </tr>
+                <tr>
+                    <td>mahima</td>
+                    <td>falguni</td>
+                    <td>pink</td>
+                </tr>
+                <tr>
+                    <td>Neha</td>
+                    <td>tina</td>
+                    <td>red</td>
+                </tr>
+            </tbody>
+        </table>
+    <br>
+        <h4>4.Create a radio button (MERN, MEAN: Course) and checkbox (HTML, CSS, React, Node: Technology) and explain diiference between these two.</h4>
+        The radio button is used to select only one option among the all option. And checkbox is used to selct multiple option at a time among the all option.
+        <br>
+        <br>
+        <form>
+            <label>Course:</label>
+            <br>
+            <input type="radio" name="course" value="MERN">
+            MERN
+            <br>
+            <input type="radio" name="course" value="MEAN">
+            MEAN
+            <br>
+            <br>
+            <label>Technology:</label>
+            <br>
+            <input type="checkbox" name="Technology" value="HTML">
+            HTML
+            <br>
+            <input type="checkbox" name="Technology" value="CSS">
+            CSS
+            <br>
+            <input type="checkbox" name="Technology" value="React">
+            React
+            <br>
+            <input type="checkbox" name="Technology" value="Node">
+            Node
+        </form>
+
+    
+
+
+
+
+    
+</body>
+</html>
